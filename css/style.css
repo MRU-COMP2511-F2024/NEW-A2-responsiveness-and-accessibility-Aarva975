@@ -1,0 +1,170 @@
+body {
+  background-color: rgba(16, 14, 14, 0.795);
+  margin: 0;
+  padding: 0;
+}
+
+nav ul, .EachCar, .FutureConcept, .CustName, .PhoneEmail,.TimeCar, .FrontPage{
+  list-style: none;
+  display: flex;
+}
+
+header {
+  display: flex;
+  font: bold 18px sans-serif;
+  justify-content: space-between;
+}
+
+header .Logo {
+  height: 150px;
+}
+
+header .NavLinks {
+  position: relative;
+  top: 30%;
+}
+
+nav ul {
+  gap: 100px;
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.EachCar img {
+  max-width: 100%;
+  height: auto;
+}
+
+#overlay {
+  position: absolute;
+  top: 35vh;
+  left: 4vw;
+  font: bold 55px monospace;
+  color: white;
+}
+
+#overlay2 {
+  position: absolute;
+  top: 55vh;
+  left: 4vw;
+  font: bold 20px monospace;
+  color: white;
+}
+
+.EachCar {
+  font: bold 18px sans-serif;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.EachCar li {
+  color: white;
+  text-decoration: none;
+
+}
+
+.temp{
+  display: block;
+  list-style: none;
+  text-align: center;  
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font: bold 40px sans-serif;
+  color: white;
+}
+
+.FutureConcept {
+  padding: 0;
+  justify-content: center;
+}
+
+.FutureConcept img {
+  max-width: 100%;
+}
+
+#OverLayFutureConcept {
+  position: absolute;
+  top: 180vh;
+  left: 50vw;
+  font: bold 25px monospace; 
+  color: white;
+}
+
+#TestDrive {
+  color: white;
+}
+.CustName, .PhoneEmail, .TimeCar{
+  padding: 0;
+}
+.CustName {
+  gap: 300px;
+}
+
+.PhoneEmail {
+  gap: 335px;
+}
+
+.TimeCar {
+  gap: 390px;
+}
+
+#TestDrive .Logo {
+  float: right;
+  height: 500px;
+  width: auto;
+}
+.TheFrontPage, .TheEngine, .TheInterior {
+  position: relative;
+  height: 800px;
+  width: 800px;
+}
+.FrontPage {
+  gap: 20px;
+  font: bold 25px sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  color: white;
+}
+#FindYourCar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+#Future {
+  background-color: #1a1a1a;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+#TestDrive {
+  padding: 20px;
+  margin-top: 40px;
+  color: white;
+}
+
+table, th, td {
+  border: 2px solid white;
+  color: white;
+  height: 60px;
+  width: 1880px;
+  text-align: center;
+  font:  25px monospace; 
+  border-collapse: collapse;
+}
+.boldleft, .boldtop{
+  font:  bold 30px monospace; 
+}
+.boldleft{
+  text-align: left;
+}
