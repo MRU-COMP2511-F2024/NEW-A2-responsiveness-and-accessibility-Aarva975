@@ -1,31 +1,122 @@
 html {
-  background-color: white;
-
-}
-
-header {
-  line-height: 200px;
-  height: 150px;
-  border: 3px solid;
-  text-align: center;
-
-}
-
-.nav_grid {
-  display: grid;
-  height: 100%;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 1fr;
   background-color: rgba(16, 14, 14, 0.842);
+  text-align: center;
   align-items: center;
 }
+
+#item1 img {
+  height: 100px;
+}
+
 
 a {
   color: white;
   text-decoration: none;
-  font: bold 18px Arial, Helvetica, sans-serif;
+  font: bold 12px Arial, Helvetica, sans-serif;
 }
 
+header {
+  height: 100px;
+  border: 3px solid;
+  text-align: center;
+
+}
+.grid2{
+  color: white;
+}
+
+
 @media screen and (max-width: 590px) {
+
+  .wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    align-items: center;
+  }
+
+  .nav_grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+
+  #item2,
+  #item3,
+  #item4 {
+    display: none;
+  }
   
+
+  .grid2 img {
+    height: auto;
+    width: 90vw;
+  }
+
+  .grid2 a img {
+    height: auto;
+    width: 30vw;
+  }
+
+}
+
+@media screen and (min-width: 590px) and (max-width: 790px) {
+  .wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .nav_grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: auto;
+    align-items: center;
+
+  }
+  .grid2 img {
+    height: auto;
+    width: 48vw;
+  }
+
+  .grid2 a img {
+    height: auto;
+    width: 10vw;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .nav_grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: auto;
+    align-items: center;
+  }
+
+  .wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .grid2 img {
+    height: auto;
+    width: 49vw;
+  }
+
+  .grid2 a img {
+    height: auto;
+    width: 30vw;
+  }
 }
