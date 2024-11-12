@@ -23,15 +23,22 @@ header {
 
 }
 
-.grid2 {
+.grid2,
+.FrontPage {
   color: white;
 }
-#TestDrive{
+
+#TestDrive {
   color: white;
   text-align: left;
 }
+
 #TestDrive img {
- height: 100px;
+  height: 100px;
+}
+
+.FeatureList {
+  text-align: left;
 }
 
 @media screen and (max-width: 590px) {
@@ -69,6 +76,11 @@ header {
     width: 30vw;
   }
 
+  .FrontPage img {
+    width: 90vw;
+    height: auto;
+  }
+
 
 }
 
@@ -90,9 +102,11 @@ header {
     align-items: center;
 
   }
-#TestDrive{
-  grid-column: 1/span 2;
-}
+
+  #TestDrive {
+    grid-column: 1/span 2;
+  }
+
   .grid2 img {
     height: auto;
     width: 45vw;
@@ -101,6 +115,26 @@ header {
   .grid2 a img {
     height: auto;
     width: 10vw;
+  }
+
+  .FrontPage img {
+    width: 90vw;
+    height: auto;
+  }
+  table, th, td {
+    border: 2px solid white;
+    color: white;
+    height: auto;
+    width: 10vw;
+    text-align: center;
+    font:  20px monospace; 
+    border-collapse: collapse;
+  }
+  .boldleft, .boldtop{
+    font:  bold 22px monospace; 
+  }
+  .boldleft{
+    text-align: left;
   }
 }
 
@@ -117,6 +151,7 @@ header {
     grid-template-rows: 1fr;
     align-items: center;
   }
+
   .wrapper {
     display: grid;
     height: 100%;
@@ -136,7 +171,13 @@ header {
     height: auto;
     width: 100px;
   }
-  #TestDrive{
+
+  #TestDrive {
     grid-column: 1/span 2;
+  }
+
+  .FrontPage img {
+    width: 790px;
+    height: auto;
   }
 }
