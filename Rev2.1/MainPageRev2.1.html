@@ -46,21 +46,21 @@
     <div class="wrapper">
 
         <div class="grid2" id="grid2_item1">
-            <img src="../images/TheApexFront.png" alt="TheApexFrontOn">
+            <img src="../images/TheApexFront.png" alt="TheApexFrontOn"><br />
             Unleash pure adrenaline —where speed meets precision in a sleek,
             aerodynamic package
             <br /> <a href="TheApex.html"><img src="../images/LearnMore.png" alt="Learn More about The Apex"></a>
         </div>
         <div class="grid2" id="grid2_item2">
-            <img src="../images/The9XFront.png" alt="The9XFrontOn">
+            <img src="../images/The9XFront.png" alt="The9XFrontOn"><br />
             The pinnacle of luxury and elegance, sophistication with bold curves and refined power
             <br /> <a href="The9X.html"><img src="../images/LearnMore.png" alt="Learn More about The 9X"></a>
 
         </div>
 
         <div class="grid2" id="grid2_item3">
-            <img src="../images/TheStrikerFront.png" alt="TheStrikerFrontOn">
-            
+            <img src="../images/TheStrikerFront.png" alt="TheStrikerFrontOn"><br />
+
             Built to dominate, fuses aggressive design with unstoppable performance, embodying raw strength on
             wheels.
 
@@ -70,14 +70,82 @@
 
         <div class="grid2" id="grid2_item4">
 
-            <img src="../images/ConceptExterior.png" alt="ConceptExterior">
+            <img src="../images/ConceptExterior.png" alt="ConceptExterior"><br />
 
-            Our concept car embodies cutting-edge <br>
-            design and high-performance engineering.<br>
-            With its sleek, low-slung body and <br>
-            advanced aerodynamics, it promises speed <br>
-            and precision on the road. vision of the<br>
+            Our concept car embodies cutting-edge
+            design and high-performance engineering.
+            With its sleek, low-slung body and
+            advanced aerodynamics, it promises speed
+            and precision on the road. vision of the
             future for gas-powered vehicles.
         </div>
+        <br />
+        <br />
+        <div id="TestDrive">
+
+            <form id="form_one" method="post" action="mailto:aarva975@mtroyal.ca">
+                <fieldset class="PersonalInfo">
+                    <legend>Book A Test Drive</legend>
+
+                    <img src="../images/TorqueWerksLogo2.png" class="Logo" alt="TorqueWerks Logo">
+                    <dl>
+                        <dt><label for="Salutation">Salutation</label></dt>
+                        <dd>
+                            <select name="Salutation" id="Salutation" size="1">
+                                <option>Mr.</option>
+                                <option>Ms.</option>
+                                <option>Mrs.</option>
+                                <option>Other</option>
+                            </select>
+                        </dd>
+
+                        <dt><label for="FirstName">First Name*</label></dt>
+                        <dd><input type="text" name="FirstName" id="FirstName" size="25" maxlength="100" required></dd>
+
+                        <dt><label for="LastName">Last Name*</label></dt>
+                        <dd><input type="text" name="LastName" id="LastName" size="25" maxlength="100" required></dd>
+
+                        <dt><label for="phone">Phone*</label></dt>
+                        <dd><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="xxx-xxx-xxxx" required></dd>
+
+                        <dt><label for="Email">Email*</label></dt>
+                        <dd>
+                            <input type="email" name="Email" id="Email" placeholder="username@mtroyal.ca"
+                                pattern=".+@mtroyal.ca" required><br>
+                            <small>Must be your MRU Gmail address</small>
+                        </dd>
+
+                        <dt><label>Time Slot:</label></dt>
+                        <dd>
+                            <input type="radio" name="TimeSlot" value="Morning"> Morning (8-11 AM) <br>
+                            <input type="radio" name="TimeSlot" value="Noon"> Noon (12-3 PM) <br>
+                            <input type="radio" name="TimeSlot" value="Evening"> Evening (4-7 PM)
+                        </dd>
+
+                        <dt><label>Choose Cars to Test:</label></dt>
+                        <dd>
+                            <input type="checkbox" name="TheApex" value="Yes"> The Apex <br>
+                            <input type="checkbox" name="The9X" value="Yes"> The 9X <br>
+                            <input type="checkbox" name="TheStriker" value="Yes"> The Striker
+                        </dd>
+
+                        <dt><label for="Comments">Special Comments:</label></dt>
+                        <dd><textarea id="Comments" name="Comments" cols="40"
+                                placeholder="Please Comment here"></textarea></dd>
+                    </dl>
+                    <input type="submit" value="Submit" formnovalidate>
+                    <input type="reset">
+        </div>
+        </fieldset>
+        </form>
+
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TorqueWerks. All images and content were generated throught OpenAi's ChatGPT.</p>
+    </footer>
+
+
 
 </body>
