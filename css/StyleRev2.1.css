@@ -4,6 +4,7 @@ html {
   align-items: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 15px;
+  color: white;
 }
 
 #item1 img {
@@ -12,6 +13,7 @@ html {
 
 .boldleft {
   text-align: left;
+  font-size: 3vw;
 }
 
 #table1 {
@@ -22,8 +24,12 @@ html {
 a {
   color: white;
   text-decoration: none;
-  font: bold 80px;
+  font-weight: bold;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
 }
 
 header {
@@ -59,8 +65,22 @@ header {
   border: 1px solid white;
   margin: 10px;
 }
-#grid2_item1, #grid2_item2, #grid2_item3, #grid2_item4{
+
+#grid2_item1, #grid2_item2, #grid2_item3, #grid2_item4 {
   height: 100%;
+}
+
+input[type="submit"], input[type="reset"] {
+  color: white;
+  background-color: #333;
+  border: 2px solid white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover,
+input[type="submit"]:focus, input[type="reset"]:focus {
+  outline: 2px solid #FFD700;
 }
 
 @media screen and (max-width: 590px) {
@@ -69,18 +89,17 @@ header {
     height: 100%;
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
-    grid-gap: px;
+    grid-gap: 10px;
   }
 
   .nav_grid {
-    
     display: grid;
     height: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     align-items: center;
-    grid-gap: px;
   }
+
   #item2,
   #item3,
   #item4 {
@@ -110,13 +129,14 @@ header {
     height: auto;
     width: 10vw;
     text-align: center;
-    font: 3vw monospace;
+    font-size: 3vw;
     border-collapse: collapse;
   }
 
   .boldleft,
   .boldtop {
-    font: bold 5vw monospace;
+    font-weight: bold;
+    font-size: 5vw;
   }
 }
 
@@ -126,7 +146,6 @@ header {
     grid-template-columns: auto auto;
     grid-template-rows: repeat(2, auto);
     align-items: center;
-
   }
 
   .nav_grid {
@@ -138,11 +157,12 @@ header {
 
   .boldleft,
   .boldtop {
-    font: bold 22px monospace;
+    font-weight: bold;
+    font-size: 22px;
   }
 
   #TestDrive {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
   }
 
   .grid2 img {
@@ -168,7 +188,7 @@ header {
     height: auto;
     width: 10vw;
     text-align: center;
-    font: 3.5vw monospace;
+    font-size: 3.5vw;
     border-collapse: collapse;
   }
 }
@@ -190,7 +210,7 @@ header {
     display: grid;
     height: 100%;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto ;
+    grid-template-rows: auto auto;
     align-items: center;
     grid-gap: 10px;
   }
@@ -206,7 +226,7 @@ header {
   }
 
   #TestDrive {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
   }
 
   .FrontPage img {
@@ -216,7 +236,8 @@ header {
 
   .boldleft,
   .boldtop {
-    font: bold 22px monospace;
+    font-weight: bold;
+    font-size: 22px;
   }
 
   table,
@@ -227,7 +248,12 @@ header {
     height: auto;
     width: 10vw;
     text-align: center;
-    font: 28px monospace;
+    font-size: 28px;
     border-collapse: collapse;
   }
+}
+
+a:focus, input:focus, button:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
 }

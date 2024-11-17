@@ -17,25 +17,25 @@
 <body>
     <header>
         <nav class="nav_grid">
-            <div class=nav_bar_grid id="item1">
+            <div class="nav_bar_grid" id="item1">
                 <a href="index.html"><img src="images/TorqueWerksLogo2.png" class="Logo" alt="TorqueWerks Logo"></a>
             </div>
-            <div class=nav_bar_grid id="item2">
+            <div class="nav_bar_grid" id="item2">
                 <a href="TheApexRev2.1.html">The Apex</a>
             </div>
-            <div class=nav_bar_grid id="item3">
+            <div class="nav_bar_grid" id="item3">
                 <a href="The9XRev2.1.html">The 9X</a>
             </div>
-            <div class=nav_bar_grid id="item4">
+            <div class="nav_bar_grid" id="item4">
                 <a href="TheStrikerRev2.1.html">The Striker</a>
             </div>
-            <div class=nav_bar_grid id="item5">
+            <div class="nav_bar_grid" id="item5">
                 <a href="Compare.html">Find the Car For You</a>
             </div>
-            <div class=nav_bar_grid id="item6">
+            <div class="nav_bar_grid" id="item6">
                 <a href="#TestDrive">Book A Test Drive</a>
             </div>
-            <div class=nav_bar_grid id="item7">
+            <div class="nav_bar_grid" id="item7">
                 <a href="https://maps.app.goo.gl/M9bYqvDCBkrDwFDv9" target="_blank">
                     <img src="images/LocationTag.png" alt="Location Tag" height="35"><br>
                 </a>
@@ -46,38 +46,30 @@
     <div class="wrapper">
 
         <div class="grid2" id="grid2_item1">
-            <img src="images/TheApexFront.png" alt="TheApexFrontOn"><br />
+            <img src="images/TheApexFront.png" alt="Front view of The Apex model"><br />
             Unleash pure adrenaline —where speed meets precision in a sleek,
             aerodynamic package
             <br /> <a href="TheApexRev2.1.html"><img src="images/LearnMore.png" alt="Learn More about The Apex"></a>
         </div>
         <div class="grid2" id="grid2_item2">
-            <img src="images/The9XFront.png" alt="The9XFrontOn"><br />
+            <img src="images/The9XFront.png" alt="Front view of The 9X model"><br />
             The pinnacle of luxury and elegance, sophistication with bold curves and refined power
             <br /> <a href="The9XRev2.1.html"><img src="images/LearnMore.png" alt="Learn More about The 9X"></a>
-
         </div>
 
         <div class="grid2" id="grid2_item3">
-            <img src="images/TheStrikerFront.png" alt="TheStrikerFrontOn"><br />
-
-            Built to dominate, fuses aggressive design with unstoppable performance, embodying raw strength on
-            wheels.
-
+            <img src="images/TheStrikerFront.png" alt="Front view of The Striker model"><br />
+            Built to dominate, fuses aggressive design with unstoppable performance, embodying raw strength on wheels.
             <br /> <a href="TheStrikerRev2.1.html"><img src="images/LearnMore.png" alt="Learn More about The Striker"></a>
-
         </div>
 
         <div class="grid2" id="grid2_item4">
-
-            <img src="images/ConceptExterior.png" alt="ConceptExterior"><br />
-
-            Our concept car embodies cutting-edge
-            design and high-performance engineering. This is the vision of the
+            <img src="images/ConceptExterior.png" alt="Exterior view of the concept car"><br />
+            Our concept car embodies cutting-edge design and high-performance engineering. This is the vision of the
             future for gas-powered vehicles.
         </div>
+        
         <div id="TestDrive">
-
             <form id="form_one" method="post" action="mailto:aarva975@mtroyal.ca">
                 <fieldset class="PersonalInfo">
                     <legend>Book A Test Drive</legend>
@@ -101,8 +93,7 @@
                         <dd><input type="text" name="LastName" id="LastName" size="25" maxlength="100" required></dd>
 
                         <dt><label for="phone">Phone*</label></dt>
-                        <dd><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                placeholder="xxx-xxx-xxxx" required></dd>
+                        <dd><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required></dd>
 
                         <dt><label for="Email">Email*</label></dt>
                         <dd>
@@ -111,36 +102,37 @@
                             <small>Must be your MRU Gmail address</small>
                         </dd>
 
-                        <dt><label>Time Slot:</label></dt>
+                        <dt>Time Slot:</dt>
                         <dd>
-                            <input type="radio" name="TimeSlot" value="Morning"> Morning (8-11 AM) <br>
-                            <input type="radio" name="TimeSlot" value="Noon"> Noon (12-3 PM) <br>
-                            <input type="radio" name="TimeSlot" value="Evening"> Evening (4-7 PM)
+                            <input type="radio" id="morning" name="TimeSlot" value="Morning">
+                            <label for="morning">Morning (8-11 AM)</label><br>
+                            <input type="radio" id="noon" name="TimeSlot" value="Noon">
+                            <label for="noon">Noon (12-3 PM)</label><br>
+                            <input type="radio" id="evening" name="TimeSlot" value="Evening">
+                            <label for="evening">Evening (4-7 PM)</label>
                         </dd>
 
-                        <dt><label>Choose Cars to Test:</label></dt>
+                        <dt>Choose Cars to Test:</dt>
                         <dd>
-                            <input type="checkbox" name="TheApex" value="Yes"> The Apex <br>
-                            <input type="checkbox" name="The9X" value="Yes"> The 9X <br>
-                            <input type="checkbox" name="TheStriker" value="Yes"> The Striker
+                            <input type="checkbox" id="TheApex" name="TheApex" value="Yes">
+                            <label for="TheApex">The Apex</label><br>
+                            <input type="checkbox" id="The9X" name="The9X" value="Yes">
+                            <label for="The9X">The 9X</label><br>
+                            <input type="checkbox" id="TheStriker" name="TheStriker" value="Yes">
+                            <label for="TheStriker">The Striker</label>
                         </dd>
 
                         <dt><label for="Comments">Special Comments:</label></dt>
-                        <dd><textarea id="Comments" name="Comments" cols="40"
-                                placeholder="Please Comment here"></textarea></dd>
+                        <dd><textarea id="Comments" name="Comments" cols="40" placeholder="Please Comment here"></textarea></dd>
                     </dl>
                     <input type="submit" value="Submit" formnovalidate>
-                    <input type="reset">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
         </div>
-        </fieldset>
-        </form>
-
-    </div>
     </div>
     <footer>
-        <p>&copy; 2024 TorqueWerks. All images and content were generated throught OpenAi's ChatGPT.</p>
+        <p>&copy; 2024 TorqueWerks. All images and content were generated through OpenAI's ChatGPT.</p>
     </footer>
-
-
-
 </body>
+</html>
