@@ -1,0 +1,11 @@
+## 1: Issues that identified through the manual and automated analysis? 
+Some issues identified include: elements that didn’t use HTML tags that define their purpose affecting screen reader navigation and logical structure of the content. Some images lacked alt attributes or had non-descriptive alt text, impacting the experience for users who cannot see the images. Certain form fields were missing labels or were not properly associated with their labels. Table headers didn’t have scope, which affects how screen readers interpret the data table.
+
+## 2: What kinds of changes were made. Generalize the types of issues that were created when building your website, and then the general type of changes that were made to resolve those issues.
+To improve semantic markup, we added tags to structure content correctly. This included using <header>, <section>, <footer>, <nav>, <h1> to <h6>, as well as scope attributes for table headers. Images were given descriptive alt text to describe the purpose of visual elements to users. Each form input got an associated label, and added ARIA labels to make form fields more accessiblity friendly. 
+
+## 3: How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?
+Principle of Continuity- By establishing structure with semantic HTML, users will experience a natural flow as they navigate through the site. This continuity assists those who use Screen Readers by creating a predictable flow of information.
+Principle of Figure-Ground- Adjusting the contrast enhances the figure-ground principle, as it ensures that the text stands out against backgrounds, and makes it easier for users to identify content.
+Principle of Similarity- Consistent styling for certain elements, such as links and buttons with visible indicators, helps users recognize these elements easier.
+Principle of Proximity- Organizing related content with semantic grouping and labels created a improved experience, making related items easier to associate together. 
