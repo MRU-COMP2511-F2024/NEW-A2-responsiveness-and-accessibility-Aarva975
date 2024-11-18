@@ -16,26 +16,26 @@
 
 <body>
     <header>
-        <nav class="nav_grid">
-            <div class=nav_bar_grid id="item1">
+        <nav class="nav_grid" role="navigation" aria-label="Main navigation">
+            <div class="nav_bar_grid" id="item1">
                 <a href="index.html"><img src="images/TorqueWerksLogo2.png" class="Logo" alt="TorqueWerks Logo"></a>
             </div>
-            <div class=nav_bar_grid id="item2">
+            <div class="nav_bar_grid" id="item2">
                 <a href="TheApexRev2.1.html">The Apex</a>
             </div>
-            <div class=nav_bar_grid id="item3">
+            <div class="nav_bar_grid" id="item3">
                 <a href="The9XRev2.1.html">The 9X</a>
             </div>
-            <div class=nav_bar_grid id="item4">
+            <div class="nav_bar_grid" id="item4">
                 <a href="TheStrikerRev2.1.html">The Striker</a>
             </div>
-            <div class=nav_bar_grid id="item5">
+            <div class="nav_bar_grid" id="item5">
                 <a href="Compare.html">Find the Car For You</a>
             </div>
-            <div class=nav_bar_grid id="item6">
+            <div class="nav_bar_grid" id="item6">
                 <a href="index.html#TestDrive">Book A Test Drive</a>
             </div>
-            <div class=nav_bar_grid id="item7">
+            <div class="nav_bar_grid" id="item7">
                 <a href="https://maps.app.goo.gl/M9bYqvDCBkrDwFDv9" target="_blank">
                     <img src="images/LocationTag.png" alt="Location Tag" height="35"><br>
                 </a>
@@ -43,47 +43,46 @@
         </nav>
     </header>
 
-    <section class="FrontPage">
-        <img class="TheFrontPage" src="images/ApexFrontON.png" alt="A Pic of the Apex's Exterior">
-        <h1>Reliability:</h1>
-        <p>
-            The Apex is designed with track-tested durability in mind, featuring forged internals to withstand high RPMs
-            and aggressive driving. Its high-performance cooling system ensures that the engine stays cool even under
-            extreme
-            conditions. Regular maintenance is straightforward, with easily accessible parts and an extensive service
-            network, making it a reliable choice for enthusiasts who push their cars to the limit.
-        </p>
-    </section>
+    <main>
+        <section class="FrontPage" aria-labelledby="reliability">
+            <img class="TheFrontPage" src="images/ApexFrontON.png" alt="Front view of the TorqueWerks Apex's exterior">
+            <h1 id="reliability">Reliability:</h1>
+            <p>
+                The Apex is designed with track-tested durability in mind, featuring forged internals to withstand high RPMs
+                and aggressive driving. Its high-performance cooling system ensures that the engine stays cool even under
+                extreme conditions. Regular maintenance is straightforward, with easily accessible parts and an extensive service
+                network, making it a reliable choice for enthusiasts who push their cars to the limit.
+            </p>
+        </section>
 
-    <section class="FrontPage">
-        <img class="TheEngine" src="images/ApexEngine.png" alt="A Pic of the Apex's Engine">
-        <h1>Engine:</h1>
-        <p>
-            The Apex is equipped with a 3.5L V6 twin-turbocharged engine, built to deliver high horsepower and rapid
-            acceleration. With advanced turbo technology, this engine generates up to 450 horsepower and 420 lb-ft of
-            torque,
-            making it ideal for those who crave speed and performance. Lightweight aluminum construction ensures optimal
-            weight distribution, enhancing agility on both track and street. The engine is paired with a 6-speed manual
-            transmission for an old-school, thrilling driving experience.
-        </p>
-    </section>
+        <section class="FrontPage" aria-labelledby="engine">
+            <img class="TheEngine" src="images/ApexEngine.png" alt="View of the TorqueWerks Apex's engine">
+            <h1 id="engine">Engine:</h1>
+            <p>
+                The Apex is equipped with a 3.5L V6 twin-turbocharged engine, built to deliver high horsepower and rapid
+                acceleration. With advanced turbo technology, this engine generates up to 450 horsepower and 420 lb-ft of
+                torque, making it ideal for those who crave speed and performance. Lightweight aluminum construction ensures optimal
+                weight distribution, enhancing agility on both track and street. The engine is paired with a 6-speed manual
+                transmission for an old-school, thrilling driving experience.
+            </p>
+        </section>
 
-    <section class="FrontPage">
-        <img class="TheInterior" src="images/ApexInterior.png" alt="A Pic of the Apex's Interior">
-        <h1>Features:</h1>
-        <ol class="FeatureList">
-            <li>Launch Control System: Ensures maximum traction off the line for blistering 0-60 times. </li>
-            <li>Adaptive Exhaust System: Adjusts the sound profile from subtle to aggressive based on driving mode.
-            </li>
-            <li> Driver-Selectable Modes: Allows the driver to switch between Sport, Track, and Street configurations
-                for varied driving experiences. </li>
-            <li>Carbon Fiber Hood and Spoiler: Reduces weight and enhances aerodynamics, giving the Apex a competitive
-                edge.</li>
-        </ol>
-    </section>
+        <section class="FrontPage" aria-labelledby="features">
+            <img class="TheInterior" src="images/ApexInterior.png" alt="Interior view of the TorqueWerks Apex">
+            <h1 id="features">Features:</h1>
+            <ol class="FeatureList">
+                <li>Launch Control System: Ensures maximum traction off the line for blistering 0-60 times.</li>
+                <li>Adaptive Exhaust System: Adjusts the sound profile from subtle to aggressive based on driving mode.</li>
+                <li>Driver-Selectable Modes: Allows the driver to switch between Sport, Track, and Street configurations
+                    for varied driving experiences.</li>
+                <li>Carbon Fiber Hood and Spoiler: Reduces weight and enhances aerodynamics, giving the Apex a competitive
+                    edge.</li>
+            </ol>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 TorqueWerks. All images and content were generated throught OpenAi's ChatGPT.</p>
+        <p>&copy; 2024 TorqueWerks. All images and content were generated through OpenAI's ChatGPT.</p>
     </footer>
 </body>
 

@@ -16,26 +16,26 @@
 
 <body>
     <header>
-        <nav class="nav_grid">
-            <div class=nav_bar_grid id="item1">
+        <nav class="nav_grid" role="navigation" aria-label="Main navigation">
+            <div class="nav_bar_grid" id="item1">
                 <a href="index.html"><img src="images/TorqueWerksLogo2.png" class="Logo" alt="TorqueWerks Logo"></a>
             </div>
-            <div class=nav_bar_grid id="item2">
+            <div class="nav_bar_grid" id="item2">
                 <a href="TheApexRev2.1.html">The Apex</a>
             </div>
-            <div class=nav_bar_grid id="item3">
+            <div class="nav_bar_grid" id="item3">
                 <a href="The9XRev2.1.html">The 9X</a>
             </div>
-            <div class=nav_bar_grid id="item4">
+            <div class="nav_bar_grid" id="item4">
                 <a href="TheStrikerRev2.1.html">The Striker</a>
             </div>
-            <div class=nav_bar_grid id="item5">
+            <div class="nav_bar_grid" id="item5">
                 <a href="Compare.html">Find the Car For You</a>
             </div>
-            <div class=nav_bar_grid id="item6">
+            <div class="nav_bar_grid" id="item6">
                 <a href="index.html#TestDrive">Book A Test Drive</a>
             </div>
-            <div class=nav_bar_grid id="item7">
+            <div class="nav_bar_grid" id="item7">
                 <a href="https://maps.app.goo.gl/M9bYqvDCBkrDwFDv9" target="_blank">
                     <img src="images/LocationTag.png" alt="Location Tag" height="35"><br>
                 </a>
@@ -43,48 +43,44 @@
         </nav>
     </header>
 
-    <section class="FrontPage">
-        <img class="TheFrontPage" src="images/TheStrikerExterior.png" alt="A Pic of the Striker's Exterior">
-        <h1>Reliability:</h1>
-        <p>
-            The Striker's engine is built to perform under extreme stress, utilizing forged pistons, high-strength
-            connecting rods, and a reinforced crankshaft to ensure durability. A dry sump lubrication system prevents
-            oil starvation
-            during hard cornering, enhancing reliability during spirited driving. The Striker is designed for endurance,
-            with regular maintenance allowing it to perform flawlessly even after years of heavy use.
-        </p>
-    </section>
+    <main>
+        <section class="FrontPage" aria-labelledby="reliability">
+            <img class="TheFrontPage" src="images/TheStrikerExterior.png" alt="Front view of the Striker's exterior">
+            <h1 id="reliability">Reliability:</h1>
+            <p>
+                The Striker's engine is built to perform under extreme stress, utilizing forged pistons, high-strength
+                connecting rods, and a reinforced crankshaft to ensure durability. A dry sump lubrication system prevents
+                oil starvation during hard cornering, enhancing reliability during spirited driving. The Striker is designed for endurance,
+                with regular maintenance allowing it to perform flawlessly even after years of heavy use.
+            </p>
+        </section>
 
-    <section class="FrontPage">
-        <img class="TheEngine" src="images/TheStrikerEngine.png" alt="A Pic of the Striker's Engine">
-        <h1>Engine:</h1>
-        <p>
-            At the heart of the Striker is a 5.2L V10 engine, delivering 640 horsepower and 600 lb-ft of torque, built
-            for sheer power and high-speed capability. This naturally aspirated engine roars with intensity, thanks to
-            an active
-            exhaust system that amplifies the engine note at high RPMs. The Striker’s engine is coupled with a
-            dual-clutch 7-speed transmission, ensuring lightning-fast shifts, making it ideal for both track days and
-            aggressive street
-            driving.
-        </p>
-    </section>
+        <section class="FrontPage" aria-labelledby="engine">
+            <img class="TheEngine" src="images/TheStrikerEngine.png" alt="View of the Striker's V10 engine">
+            <h1 id="engine">Engine:</h1>
+            <p>
+                At the heart of the Striker is a 5.2L V10 engine, delivering 640 horsepower and 600 lb-ft of torque, built
+                for sheer power and high-speed capability. This naturally aspirated engine roars with intensity, thanks to
+                an active exhaust system that amplifies the engine note at high RPMs. The Striker’s engine is coupled with a
+                dual-clutch 7-speed transmission, ensuring lightning-fast shifts, making it ideal for both track days and
+                aggressive street driving.
+            </p>
+        </section>
 
-    <section class="FrontPage">
-        <img class="TheInterior" src="images/TheStrikerInterior.png" alt="A Pic of the Striker's Interior">
-        <h1>Features:</h1>
-        <ol class="FeatureList">
-            <li>Launch Control with Torque Vectoring: Maximizes traction during rapid acceleration by distributing power
-                to individual wheels.</li>
-            <li>Carbon Ceramic Brakes: Provide exceptional stopping power while reducing brake fade during
-                high-performance driving. </li>
-            <li>Adjustable Rear Wing: Improves downforce and can be adjusted based on driving conditions. </li>
-            <li>Track Telemetry System: Records lap times, G-forces, and other performance metrics, accessible through
-                the infotainment system.</li>
-        </ol>
-    </section>
+        <section class="FrontPage" aria-labelledby="features">
+            <img class="TheInterior" src="images/TheStrikerInterior.png" alt="Interior view of the Striker's cabin">
+            <h1 id="features">Features:</h1>
+            <ol class="FeatureList">
+                <li>Launch Control with Torque Vectoring: Maximizes traction during rapid acceleration by distributing power to individual wheels.</li>
+                <li>Carbon Ceramic Brakes: Provide exceptional stopping power while reducing brake fade during high-performance driving.</li>
+                <li>Adjustable Rear Wing: Improves downforce and can be adjusted based on driving conditions.</li>
+                <li>Track Telemetry System: Records lap times, G-forces, and other performance metrics, accessible through the infotainment system.</li>
+            </ol>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 TorqueWerks. All images and content were generated throught OpenAi's ChatGPT.</p>
+        <p>&copy; 2024 TorqueWerks. All images and content were generated through OpenAI's ChatGPT.</p>
     </footer>
 </body>
 
